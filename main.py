@@ -13,7 +13,7 @@ def encode(password):
     new_pass = ''
     for num in password:
         if int(num) >= 7:
-            new_pass += str(int(num) + 3 - 10)
+            new_pass += str(int(num) - 7)
         else:
             new_pass += str(int(num) + 3)
     return new_pass
