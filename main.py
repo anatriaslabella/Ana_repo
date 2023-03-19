@@ -19,6 +19,16 @@ def encode(password):
     return new_pass
 
 
+def decode(password):
+    decoded_pass = ''
+    for num in password:
+        if int(num) > 2:
+            decoded_pass += str(int(num) - 3)
+        else:
+            decoded_pass += str(int(num) + 7)
+        return(decoded_pass)
+
+
 while True:
     menu()
     option = int(input('Please enter an option: '))
