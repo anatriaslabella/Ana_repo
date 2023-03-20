@@ -2,7 +2,7 @@
 
 def menu():
     print('Menu')
-    print('------------- ')
+    print('-------------')
     print('1. Encode')
     print('2. Decode')
     print('3. Quit')
@@ -26,7 +26,7 @@ def decode(password):
             decoded_pass += str(int(num) - 3)
         else:
             decoded_pass += str(int(num) + 7)
-        return(decoded_pass)
+    return decoded_pass
 
 
 while True:
